@@ -1,151 +1,147 @@
-# NovaTech Solutions — Company Knowledge Base
+# Bee Soluções Digitais — Base de Conhecimento
 
-## About the Company
+## Sobre a Empresa
 
-NovaTech Solutions is a Brazilian technology company founded in 2015, headquartered in Fortaleza, Ceará.
-We specialise in custom software development, cloud infrastructure management, and IT consulting for
-small and medium-sized businesses across Brazil.
+A Bee Soluções Digitais é uma empresa brasileira especializada em marketing digital e criação de sites,
+fundada em 2020 e sediada em Fortaleza, Ceará. Atendemos empresas de todos os portes em todo o Brasil,
+ajudando nossos clientes a crescerem no ambiente digital com estratégias modernas e resultados reais.
 
-Our mission is to democratise access to high-quality technology solutions, helping businesses of all
-sizes grow through smart digital transformation.
-
----
-
-## Products and Services
-
-### 1. Custom Software Development
-- Web applications (React, Node.js, .NET)
-- Mobile applications (iOS and Android — native and cross-platform with Flutter)
-- API design and integration
-- Legacy system modernisation
-
-### 2. Cloud Infrastructure (NovaTech Cloud)
-- Cloud migration assessment and planning
-- Infrastructure setup and management on AWS, Azure, and GCP
-- 24/7 infrastructure monitoring
-- Disaster recovery and backup solutions
-
-### 3. IT Consulting
-- Technology strategy roadmaps
-- Systems architecture review
-- Security audits and compliance (LGPD)
-- Team training and upskilling workshops
-
-### 4. SaaS Products
-- **NovaFlow** — Business process automation platform (workflow builder, integrations, reporting)
-- **NovaDesk** — Customer support ticketing system with WhatsApp and e-mail integration
-- **NovaSight** — Business intelligence and dashboard platform (connects to any database or spreadsheet)
+Nossa missão é transformar a presença digital dos nossos clientes, gerando mais visibilidade, leads e vendas.
 
 ---
 
-## Pricing
+## Produtos e Serviços
 
-All prices are in BRL and exclude taxes.
+### 1. Criação de Sites e Landing Pages
+- Sites institucionais
+- Landing pages de alta conversão
+- Lojas virtuais (e-commerce)
+- Sites responsivos e otimizados para SEO
 
-### Custom Development (quoted per project)
-- Discovery workshop (requirements, architecture): R$ 2,500 (one-time)
-- Development hourly rate: R$ 280/hour
-- Typical small project (3–5 months): R$ 80,000 – R$ 200,000
-- Typical medium project (6–12 months): R$ 200,000 – R$ 600,000
+### 2. Gestão de Redes Sociais
+- Criação e gestão de perfis no Instagram, Facebook e LinkedIn
+- Produção de conteúdo (textos, artes e vídeos curtos)
+- Calendário editorial mensal
+- Relatórios de desempenho quinzenais
 
-### NovaTech Cloud — Managed Infrastructure Plans
-| Plan        | Monthly price | Includes                                          |
-|-------------|---------------|---------------------------------------------------|
-| Starter     | R$ 1,490      | Up to 3 servers, 8×5 monitoring, basic backups    |
-| Professional| R$ 3,990      | Up to 10 servers, 24×7 monitoring, daily backups  |
-| Enterprise  | R$ 9,990      | Unlimited servers, 24×7 NOC, real-time replication|
+### 3. Tráfego Pago
+- Campanhas no Google Ads (pesquisa, display e YouTube)
+- Campanhas no Meta Ads (Instagram e Facebook)
+- Gestão completa: criação, otimização e relatórios
+- Foco em ROI e geração de leads qualificados
 
-### SaaS Products — Monthly Subscription
-| Product   | Basic          | Standard        | Enterprise       |
-|-----------|----------------|-----------------|------------------|
-| NovaFlow  | R$ 499 / month | R$ 990 / month  | Custom quote     |
-| NovaDesk  | R$ 299 / month | R$ 699 / month  | Custom quote     |
-| NovaSight | R$ 399 / month | R$ 899 / month  | Custom quote     |
+### 4. SEO (Otimização para Mecanismos de Busca)
+- Auditoria técnica do site
+- Otimização on-page e off-page
+- Produção de conteúdo otimizado
+- Relatório mensal de posicionamento
 
-All SaaS plans include a **14-day free trial** (no credit card required).
-Annual billing gives a **15% discount** on all SaaS plans.
-
-### IT Consulting
-- Strategy and architecture consulting: R$ 320/hour
-- Security audit (starting at): R$ 8,500 per engagement
-- Training workshops: R$ 4,000/day (up to 20 participants)
-
----
-
-## Opening Hours
-
-**Sales and Customer Success Team**
-- Monday to Friday: 08:00 – 18:00 (BRT / UTC-3)
-- Saturday: 09:00 – 13:00
-- Sundays and national holidays: closed
-
-**Technical Support (for active contracts)**
-- Starter plan: Monday to Friday, 08:00 – 18:00
-- Professional plan: Monday to Friday, 07:00 – 22:00; Saturday, 08:00 – 18:00
-- Enterprise plan: 24 hours a day, 7 days a week
+### 5. Identidade Visual
+- Criação de logotipo
+- Manual de marca
+- Artes para redes sociais
+- Materiais impressos (cartão, folder, banner)
 
 ---
 
-## Address and Contact
+## Preços
 
-**Main Office**
-Rua das Palmeiras, 1.200 — Sala 502
-Bairro Aldeota, Fortaleza – CE
-CEP 60.115-000
+### Sites e Landing Pages
+| Serviço              | Valor a partir de |
+|----------------------|-------------------|
+| Landing Page         | R$ 1.500          |
+| Site Institucional   | R$ 3.000          |
+| Loja Virtual         | R$ 5.000          |
 
-**Branch Office — São Paulo**
-Av. Paulista, 2.300 — Conjunto 141
-Bela Vista, São Paulo – SP
-CEP 01310-300
+### Gestão de Redes Sociais (mensalidade)
+| Plano      | Redes Sociais | Posts/mês | Valor        |
+|------------|---------------|-----------|--------------|
+| Básico     | 1 rede        | 12 posts  | R$ 800/mês   |
+| Profissional| 2 redes      | 20 posts  | R$ 1.400/mês |
+| Premium    | 3 redes       | 30 posts  | R$ 2.200/mês |
 
-**Phone:** +55 (85) 3456-7890
-**WhatsApp (Sales):** +55 (85) 98765-4321
-**E-mail (General):** contato@novatechsolutions.com.br
-**E-mail (Support):** suporte@novatechsolutions.com.br
-**Website:** https://www.novatechsolutions.com.br
+### Tráfego Pago (gestão — investimento em anúncios à parte)
+| Plano        | Valor da gestão |
+|--------------|-----------------|
+| Starter      | R$ 700/mês      |
+| Profissional | R$ 1.200/mês    |
+| Enterprise   | R$ 2.000/mês    |
+
+### SEO
+- Plano mensal a partir de R$ 1.000/mês
+- Contrato mínimo de 3 meses (resultados orgânicos levam tempo)
+
+### Identidade Visual
+- Logotipo + manual de marca: a partir de R$ 1.200
+- Pacote completo (logo + redes + materiais): a partir de R$ 2.500
+
+Todos os valores podem variar conforme o escopo do projeto. Solicite um orçamento personalizado.
 
 ---
 
-## Frequently Asked Questions
+## Horário de Atendimento
 
-**Q: How do I start a project with NovaTech?**
-A: Contact us by phone, WhatsApp, or e-mail to schedule a free 30-minute discovery call.
-After that, we conduct a paid Discovery Workshop to define the scope, architecture, and budget.
+- Segunda a sexta: 08h às 18h
+- Sábado: 09h às 13h
+- Domingos e feriados: fechado
 
-**Q: Do you work with clients outside of Fortaleza?**
-A: Yes! We work with clients across all of Brazil and internationally. Most meetings are
-conducted remotely via video call. Our São Paulo office serves clients in the South and
-Southeast regions.
+Atendimento pelo WhatsApp dentro do horário comercial. Mensagens fora do horário serão respondidas
+no próximo dia útil.
 
-**Q: How long does a typical project take?**
-A: Simple web applications typically take 2–4 months. Complex enterprise systems can take
-6–12 months or more. We provide a detailed timeline during the Discovery Workshop.
+---
 
-**Q: What technologies do you use?**
-A: We work with React, Next.js, Node.js, .NET, Python, Flutter, PostgreSQL, MongoDB, Redis,
-AWS, Azure, GCP, Docker, and Kubernetes, among others. We choose the best stack for each project.
+## Endereço e Contato
 
-**Q: Do you offer post-launch support?**
-A: Yes. We offer maintenance contracts starting at R$ 1,200/month, which includes bug fixes,
-minor feature updates, and 8×5 support. Custom support packages are available for larger systems.
+**Escritório**
+Rua das Flores, 500 — Sala 301
+Meireles, Fortaleza – CE
+CEP 60.165-010
 
-**Q: Is my data safe with NovaTech?**
-A: Absolutely. We are LGPD compliant and follow ISO 27001-aligned security practices.
-All data is encrypted in transit and at rest. Our infrastructure undergoes regular security audits.
+**WhatsApp:** +55 (85) 99999-0000
+**E-mail:** contato@beedigital.com.br
+**Instagram:** @beedigital
+**Site:** https://www.beedigital.com.br
 
-**Q: Can I try the SaaS products before buying?**
-A: Yes. All three SaaS products (NovaFlow, NovaDesk, NovaSight) come with a 14-day free trial
-with no credit card required. Contact our sales team to activate your trial.
+---
 
-**Q: How do I request a refund?**
-A: For SaaS subscriptions, we offer a 7-day money-back guarantee from the first payment date.
-For custom projects, refund policies are defined in the individual contract.
+## Perguntas Frequentes
 
-**Q: Do you offer student or startup discounts?**
-A: We have a startup programme that offers up to 30% off SaaS subscriptions for companies
-under 2 years old with fewer than 10 employees. Contact our sales team for details.
+**P: Como faço para solicitar um orçamento?**
+R: É simples! Entre em contato pelo WhatsApp ou e-mail informando o serviço que precisa e
+um pouco sobre o seu negócio. Retornamos em até 1 dia útil com uma proposta personalizada.
 
-**Q: How do I report a bug or get technical support?**
-A: Open a ticket through the NovaDesk portal at suporte.novatechsolutions.com.br or
-send an e-mail to suporte@novatechsolutions.com.br. Enterprise clients have a dedicated
-Slack channel and a named technical account manager.
+**P: Vocês atendem empresas de outras cidades?**
+R: Sim! Atendemos clientes em todo o Brasil de forma 100% remota. Nossas reuniões são feitas
+por videochamada (Google Meet ou Zoom).
+
+**P: Qual o prazo para entrega de um site?**
+R: Landing pages ficam prontas em 7 a 10 dias úteis. Sites institucionais levam de 15 a 25 dias úteis.
+Lojas virtuais podem levar de 30 a 45 dias dependendo do tamanho do catálogo.
+
+**P: Preciso assinar contrato?**
+R: Sim, trabalhamos com contrato para garantir a segurança de ambas as partes. O contrato detalha
+o escopo, prazos, valores e formas de pagamento.
+
+**P: Como funciona o pagamento?**
+R: Para projetos (sites, identidade visual), cobramos 50% na assinatura do contrato e 50% na entrega.
+Para serviços mensais (redes sociais, tráfego, SEO), o pagamento é feito no início de cada mês.
+Aceitamos PIX, boleto e cartão de crédito.
+
+**P: Vocês oferecem suporte após a entrega do site?**
+R: Sim. Oferecemos 30 dias de suporte gratuito após a entrega. Após esse período, temos planos de
+manutenção mensal a partir de R$ 300/mês.
+
+**P: Em quanto tempo verei resultados com tráfego pago?**
+R: Com campanhas bem configuradas, os primeiros resultados aparecem na primeira semana.
+Otimizações contínuas ao longo do mês melhoram progressivamente o desempenho.
+
+**P: E com SEO?**
+R: SEO é um trabalho de médio e longo prazo. Os primeiros resultados costumam aparecer entre
+3 e 6 meses. Por isso exigimos contrato mínimo de 3 meses.
+
+**P: Posso cancelar o serviço mensal?**
+R: Sim, com aviso prévio de 30 dias conforme descrito em contrato.
+
+**P: Vocês criam o conteúdo ou preciso fornecer?**
+R: Nos planos de gestão de redes sociais, criamos todo o conteúdo (textos e artes).
+Pedimos apenas informações básicas sobre o seu negócio, produtos e preferências de comunicação.
