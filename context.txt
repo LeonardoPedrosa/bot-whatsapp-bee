@@ -1,147 +1,38 @@
-# Bee Soluções Digitais — Base de Conhecimento
+# Bee Assessorar — Tráfego pago de alto padrão para negócios locais
 
-## Sobre a Empresa
+## Apresentação
 
-A Bee Soluções Digitais é uma empresa brasileira especializada em marketing digital e criação de sites,
-fundada em 2020 e sediada em Fortaleza, Ceará. Atendemos empresas de todos os portes em todo o Brasil,
-ajudando nossos clientes a crescerem no ambiente digital com estratégias modernas e resultados reais.
-
-Nossa missão é transformar a presença digital dos nossos clientes, gerando mais visibilidade, leads e vendas.
+Olá! Sou a BEEatriz, assistente virtual 🤖 da Bee Assessorar.
+Como posso ajudá-lo(a)?
 
 ---
 
-## Produtos e Serviços
+## Quem Somos
 
-### 1. Criação de Sites e Landing Pages
-- Sites institucionais
-- Landing pages de alta conversão
-- Lojas virtuais (e-commerce)
-- Sites responsivos e otimizados para SEO
+A Bee Assessorar é uma agência online que atua no mercado desde 2011, especializada em tráfego pago para negócios locais e em gerar performance por meio de anúncios online.
 
-### 2. Gestão de Redes Sociais
-- Criação e gestão de perfis no Instagram, Facebook e LinkedIn
-- Produção de conteúdo (textos, artes e vídeos curtos)
-- Calendário editorial mensal
-- Relatórios de desempenho quinzenais
-
-### 3. Tráfego Pago
-- Campanhas no Google Ads (pesquisa, display e YouTube)
-- Campanhas no Meta Ads (Instagram e Facebook)
-- Gestão completa: criação, otimização e relatórios
-- Foco em ROI e geração de leads qualificados
-
-### 4. SEO (Otimização para Mecanismos de Busca)
-- Auditoria técnica do site
-- Otimização on-page e off-page
-- Produção de conteúdo otimizado
-- Relatório mensal de posicionamento
-
-### 5. Identidade Visual
-- Criação de logotipo
-- Manual de marca
-- Artes para redes sociais
-- Materiais impressos (cartão, folder, banner)
+Com mais de 100 clientes atendidos e mais de 100 mil reais investidos em marketing digital, nossa missão é proporcionar resultados eficazes e impulsionar o crescimento dos nossos parceiros.
 
 ---
 
-## Preços
+## O que é Tráfego Pago?
 
-### Sites e Landing Pages
-| Serviço              | Valor a partir de |
-|----------------------|-------------------|
-| Landing Page         | R$ 1.500          |
-| Site Institucional   | R$ 3.000          |
-| Loja Virtual         | R$ 5.000          |
-
-### Gestão de Redes Sociais (mensalidade)
-| Plano      | Redes Sociais | Posts/mês | Valor        |
-|------------|---------------|-----------|--------------|
-| Básico     | 1 rede        | 12 posts  | R$ 800/mês   |
-| Profissional| 2 redes      | 20 posts  | R$ 1.400/mês |
-| Premium    | 3 redes       | 30 posts  | R$ 2.200/mês |
-
-### Tráfego Pago (gestão — investimento em anúncios à parte)
-| Plano        | Valor da gestão |
-|--------------|-----------------|
-| Starter      | R$ 700/mês      |
-| Profissional | R$ 1.200/mês    |
-| Enterprise   | R$ 2.000/mês    |
-
-### SEO
-- Plano mensal a partir de R$ 1.000/mês
-- Contrato mínimo de 3 meses (resultados orgânicos levam tempo)
-
-### Identidade Visual
-- Logotipo + manual de marca: a partir de R$ 1.200
-- Pacote completo (logo + redes + materiais): a partir de R$ 2.500
-
-Todos os valores podem variar conforme o escopo do projeto. Solicite um orçamento personalizado.
+Tráfego pago é a estratégia de direcionar visitantes para um site ou plataforma por meio de anúncios pagos.
+Ao investir em campanhas, é possível atingir um público-alvo específico, aumentando a visibilidade, o engajamento e as chances de conversões.
 
 ---
 
-## Horário de Atendimento
+## Nossos Planos
 
-- Segunda a sexta: 08h às 18h
-- Sábado: 09h às 13h
-- Domingos e feriados: fechado
-
-Atendimento pelo WhatsApp dentro do horário comercial. Mensagens fora do horário serão respondidas
-no próximo dia útil.
-
----
-
-## Endereço e Contato
-
-**Escritório**
-Rua das Flores, 500 — Sala 301
-Meireles, Fortaleza – CE
-CEP 60.165-010
-
-**WhatsApp:** +55 (85) 99999-0000
-**E-mail:** contato@beedigital.com.br
-**Instagram:** @beedigital
-**Site:** https://www.beedigital.com.br
+| Plano       | Valor mensal       | Observação       |
+|-------------|--------------------|------------------|
+| Mensal      | R$ 897/mês         |                  |
+| Trimestral  | R$ 597/mês         | MELHOR VALOR ⭐  |
+| Semestral   | R$ 691/mês         |                  |
+| Anual       | R$ 597/mês         |                  |
 
 ---
 
-## Perguntas Frequentes
+## Agendamento
 
-**P: Como faço para solicitar um orçamento?**
-R: É simples! Entre em contato pelo WhatsApp ou e-mail informando o serviço que precisa e
-um pouco sobre o seu negócio. Retornamos em até 1 dia útil com uma proposta personalizada.
-
-**P: Vocês atendem empresas de outras cidades?**
-R: Sim! Atendemos clientes em todo o Brasil de forma 100% remota. Nossas reuniões são feitas
-por videochamada (Google Meet ou Zoom).
-
-**P: Qual o prazo para entrega de um site?**
-R: Landing pages ficam prontas em 7 a 10 dias úteis. Sites institucionais levam de 15 a 25 dias úteis.
-Lojas virtuais podem levar de 30 a 45 dias dependendo do tamanho do catálogo.
-
-**P: Preciso assinar contrato?**
-R: Sim, trabalhamos com contrato para garantir a segurança de ambas as partes. O contrato detalha
-o escopo, prazos, valores e formas de pagamento.
-
-**P: Como funciona o pagamento?**
-R: Para projetos (sites, identidade visual), cobramos 50% na assinatura do contrato e 50% na entrega.
-Para serviços mensais (redes sociais, tráfego, SEO), o pagamento é feito no início de cada mês.
-Aceitamos PIX, boleto e cartão de crédito.
-
-**P: Vocês oferecem suporte após a entrega do site?**
-R: Sim. Oferecemos 30 dias de suporte gratuito após a entrega. Após esse período, temos planos de
-manutenção mensal a partir de R$ 300/mês.
-
-**P: Em quanto tempo verei resultados com tráfego pago?**
-R: Com campanhas bem configuradas, os primeiros resultados aparecem na primeira semana.
-Otimizações contínuas ao longo do mês melhoram progressivamente o desempenho.
-
-**P: E com SEO?**
-R: SEO é um trabalho de médio e longo prazo. Os primeiros resultados costumam aparecer entre
-3 e 6 meses. Por isso exigimos contrato mínimo de 3 meses.
-
-**P: Posso cancelar o serviço mensal?**
-R: Sim, com aviso prévio de 30 dias conforme descrito em contrato.
-
-**P: Vocês criam o conteúdo ou preciso fornecer?**
-R: Nos planos de gestão de redes sociais, criamos todo o conteúdo (textos e artes).
-Pedimos apenas informações básicas sobre o seu negócio, produtos e preferências de comunicação.
+Para agendar uma conversa com nossa equipe, acesse o link de agendamento disponibilizado pelo nosso time de vendas.
