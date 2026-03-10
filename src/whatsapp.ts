@@ -80,3 +80,45 @@ export async function sendMessage(to: string, text: string): Promise<void> {
     }
   }
 }
+
+/**
+ * Sends a "composing" (typing) presence indicator to the given number.
+ * Errors are swallowed — a failed presence update is non-fatal.
+ *
+ * @param to         - Recipient JID or bare number.
+ * @param durationMs - How long (ms) to show the typing indicator.
+ */
+export async function sendTyping(to: string, durationMs: number): Promise<void> {
+  let config: ReturnType<typeof getConfig>;
+
+  try {
+    config = getConfig();
+  } catch {
+    return;
+  }
+
+  const endpoint = `${config.url}/chat/sendPresence/${config.instance}`;
+
+  try {
+    await axios.post(
+      endpoint,
+      { number: to, options: { presence: "composing", delay: durationMs } },
+      {
+        headers: {
+          apikey: config.apiKey,
+          "Content-Type": "application/json",
+        },
+        timeout: 10_000,
+      }
+    );
+  } catch (err) {
+    if (axios.isAxiosError(err)) {
+      console.error(
+        `[whatsapp] Failed to send typing presence to ${to}: ` +
+          `HTTP ${err.response?.status ?? "?"}`
+      );
+    } else {
+      console.error(`[whatsapp] Unexpected error sending presence to ${to}:`, err);
+    }
+  }
+}

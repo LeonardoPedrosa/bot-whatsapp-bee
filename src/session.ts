@@ -46,3 +46,13 @@ export function trimHistory(userId: string, maxMessages: number): void {
   if (!history || history.length <= maxMessages) return;
   sessions.set(userId, history.slice(history.length - maxMessages));
 }
+
+/**
+ * Returns true if the user has no conversation history yet
+ * (i.e., this is their first message in the current session).
+ * Must be called BEFORE appendMessage to be accurate.
+ */
+export function isFirstMessage(userId: string): boolean {
+  const history = sessions.get(userId);
+  return !history || history.length === 0;
+}
