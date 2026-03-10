@@ -215,7 +215,7 @@ async function processWebhook(payload: WebhookPayload): Promise<void> {
       return;
     }
 
-    await sendMessage(from, `*BEEatriz:*\n${reply}`);
+    await sendMessage(from, `*Bia:*\n\n${reply}`);
   } catch (err) {
     console.error(`[webhook] Error generating reply for ${from}:`, err);
     await sendMessage(
