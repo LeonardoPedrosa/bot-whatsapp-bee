@@ -102,6 +102,12 @@ async function processWebhook(payload: WebhookPayload): Promise<void> {
   // Skip messages sent by the bot itself to avoid infinite loops.
   if (fromMe === true) return;
 
+  // Skip group messages — only respond to individual chats.
+  if (from?.endsWith("@g.us")) {
+    console.log(`[webhook] Ignoring group message from ${from}`);
+    return;
+  }
+
   // Skip if we could not extract a sender or text (media messages, etc.).
   if (!from || !text) return;
 
