@@ -104,7 +104,7 @@ export async function sendTyping(to: string, durationMs: number): Promise<void> 
   try {
     await axios.post(
       endpoint,
-      { number: to, options: { presence: "composing", delay: durationMs } },
+      { number: to, presence: "composing", delay: durationMs },
       {
         headers: {
           apikey: config.apiKey,
