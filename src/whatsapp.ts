@@ -99,6 +99,8 @@ export async function sendTyping(to: string, durationMs: number): Promise<void> 
 
   const endpoint = `${config.url}/chat/sendPresence/${config.instance}`;
 
+  console.log(`[whatsapp] Sending typing presence to ${to} (${durationMs}ms) — endpoint: ${endpoint}`);
+
   try {
     await axios.post(
       endpoint,
@@ -111,11 +113,12 @@ export async function sendTyping(to: string, durationMs: number): Promise<void> 
         timeout: 10_000,
       }
     );
+    console.log(`[whatsapp] Typing presence sent to ${to}`);
   } catch (err) {
     if (axios.isAxiosError(err)) {
       console.error(
         `[whatsapp] Failed to send typing presence to ${to}: ` +
-          `HTTP ${err.response?.status ?? "?"}`
+          `HTTP ${err.response?.status ?? "?"} — ${JSON.stringify(err.response?.data ?? err.message)}`
       );
     } else {
       console.error(`[whatsapp] Unexpected error sending presence to ${to}:`, err);
