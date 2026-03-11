@@ -34,6 +34,27 @@ import { isFirstMessage } from "./session";
 let paused = false;
 
 // ---------------------------------------------------------------------------
+// Per-JID auto-pause — when the owner writes to a client, the bot pauses for
+// that specific number and auto-resumes after 10 minutes of owner inactivity.
+// ---------------------------------------------------------------------------
+
+const OWNER_TAKEOVER_MS = 10 * 60 * 1_000; // 10 minutes
+const pausedJids = new Map<string, ReturnType<typeof setTimeout>>();
+
+function pauseForJid(jid: string): void {
+  const existing = pausedJids.get(jid);
+  if (existing) clearTimeout(existing);
+
+  const timer = setTimeout(() => {
+    pausedJids.delete(jid);
+    console.log(`[webhook] Auto-resumed bot for ${jid} after owner inactivity`);
+  }, OWNER_TAKEOVER_MS);
+
+  pausedJids.set(jid, timer);
+  console.log(`[webhook] Bot paused for ${jid} (owner took over)`);
+}
+
+// ---------------------------------------------------------------------------
 // Name filter — silently ignore messages that mention the owner's name
 // ---------------------------------------------------------------------------
 
@@ -78,6 +99,8 @@ interface WebhookPayload {
       conversation?: string;
       // Some clients send extended text (link previews, etc.)
       extendedTextMessage?: { text?: string };
+      // Audio messages
+      audioMessage?: object;
     };
     messageTimestamp?: number;
     pushName?: string;
@@ -144,6 +167,10 @@ async function processWebhook(payload: WebhookPayload): Promise<void> {
     } else if (cmd === "/resume") {
       paused = false;
       console.log("[webhook] Bot resumed by owner");
+    } else if (from && !from.endsWith("@g.us")) {
+      // Owner wrote a normal message to a client — pause bot for that number
+      // and reset the 10-minute auto-resume timer.
+      pauseForJid(from);
     }
     return;
   }
@@ -154,9 +181,24 @@ async function processWebhook(payload: WebhookPayload): Promise<void> {
     return;
   }
 
+  // Per-JID owner takeover — bot is silenced for this specific number.
+  if (from && pausedJids.has(from)) {
+    console.log(`[webhook] Bot paused for ${from} (owner takeover) — ignoring message`);
+    return;
+  }
+
   // Skip group messages — only respond to individual chats.
   if (from?.endsWith("@g.us")) {
     console.log(`[webhook] Ignoring group message from ${from}`);
+    return;
+  }
+
+  // Audio messages — reply with a polite notice and stop processing.
+  if (from && payload.data?.message?.audioMessage) {
+    await sendMessage(
+      from,
+      "Eu não consigo escutar áudio ainda, pois sou uma inteligência artificial. Por favor, envie sua mensagem por texto."
+    );
     return;
   }
 
