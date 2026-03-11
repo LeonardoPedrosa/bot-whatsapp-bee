@@ -209,7 +209,7 @@ async function processWebhook(payload: WebhookPayload): Promise<void> {
   if (ATTENDANT_PATTERN.test(text)) {
     await sendMessage(
       OWNER_JID,
-      `*Bia:* Cliente solicitando atendimento humano.\n\nNome: ${pushName}\nNúmero: ${from}`
+      `*Bia:* Cliente solicitando atendimento humano.\n\nNome: ${pushName}\nhttps://wa.me/${from.replace("@s.whatsapp.net", "")}`
     );
     await sendMessage(
       from,
