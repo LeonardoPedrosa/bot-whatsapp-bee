@@ -40,6 +40,14 @@ let paused = false;
 const OWNER_NAME_PATTERN = /\b(luciano|luci[a-z]*|lucano)\b/i;
 
 // ---------------------------------------------------------------------------
+// Attendant request — detect when a client wants to speak to a human
+// ---------------------------------------------------------------------------
+
+const ATTENDANT_PATTERN = /\b(atendente|atendimento|humano|pessoa|falar com algu[eé]m|quero falar|chamar|suporte|responsável)\b/i;
+
+const OWNER_JID = process.env.OWNER_JID ?? "5581998385772@s.whatsapp.net";
+
+// ---------------------------------------------------------------------------
 // Deduplication — prevents the same message being processed twice
 // (Evolution API can occasionally deliver duplicates)
 // ---------------------------------------------------------------------------
@@ -193,6 +201,21 @@ async function processWebhook(payload: WebhookPayload): Promise<void> {
     // Injection attempts are silently blocked (no reply — do not reward the attempt).
     // Other reasons (blocked, empty, too_long) are also silently discarded.
     return;
+  }
+
+  // -------------------------------------------------------------------------
+  // Attendant request — notify owner and reply to client
+  // -------------------------------------------------------------------------
+  if (ATTENDANT_PATTERN.test(text)) {
+    await sendMessage(
+      OWNER_JID,
+      `*Bia:* Cliente solicitando atendimento humano.\n\nNome: ${pushName}\nNúmero: ${from}`
+    );
+    await sendMessage(
+      from,
+      "Entendido! Vou chamar um atendente. Em breve alguém entrará em contato com você."
+    );
+    return; // Do not call Claude for this message
   }
 
   // -------------------------------------------------------------------------
