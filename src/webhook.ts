@@ -35,10 +35,10 @@ let paused = false;
 
 // ---------------------------------------------------------------------------
 // Per-JID auto-pause — when the owner writes to a client, the bot pauses for
-// that specific number and auto-resumes after 10 minutes of owner inactivity.
+// that specific number and auto-resumes after 48 hours of owner inactivity.
 // ---------------------------------------------------------------------------
 
-const OWNER_TAKEOVER_MS = 10 * 60 * 1_000; // 10 minutes
+const OWNER_TAKEOVER_MS = 48 * 60 * 60 * 1_000; // 48 hours
 const pausedJids = new Map<string, ReturnType<typeof setTimeout>>();
 
 function pauseForJid(jid: string): void {
@@ -169,7 +169,7 @@ async function processWebhook(payload: WebhookPayload): Promise<void> {
       console.log("[webhook] Bot resumed by owner");
     } else if (from && !from.endsWith("@g.us")) {
       // Owner wrote a normal message to a client — pause bot for that number
-      // and reset the 10-minute auto-resume timer.
+      // and reset the 48-hour auto-resume timer.
       pauseForJid(from);
     }
     return;
@@ -251,7 +251,7 @@ async function processWebhook(payload: WebhookPayload): Promise<void> {
   if (ATTENDANT_PATTERN.test(text)) {
     await sendMessage(
       OWNER_JID,
-      `*Bia:* Cliente solicitando atendimento humano.\n\nNome: ${pushName}\nhttps://wa.me/${from.replace("@s.whatsapp.net", "")}`
+      `*Bia:* Cliente solicitando atendimento humano.\n\nNome: ${pushName}\nhttps://wa.me/${from.replace("@s.whatsapp.net", "")}?text=Ol%C3%A1%2C+sou+o+Luciano+da+Bee+Assessorar!`
     );
     await sendMessage(
       from,
