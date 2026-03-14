@@ -69,6 +69,19 @@ const ATTENDANT_PATTERN = /\b(atendente|atendimento|humano|pessoa|falar com algu
 const OWNER_JID = process.env.OWNER_JID ?? "5581998385772@s.whatsapp.net";
 
 // ---------------------------------------------------------------------------
+// Business hours check — Mon–Fri 09:00–18:00 (Brazil BRT = UTC-3)
+// ---------------------------------------------------------------------------
+
+function isWithinBusinessHours(): boolean {
+  const now = new Date();
+  // Convert to BRT (UTC-3) — adjust for server's local offset
+  const brtTime = new Date(now.getTime() + (now.getTimezoneOffset() - 180) * 60_000);
+  const day = brtTime.getDay();  // 0=Sun … 6=Sat
+  const hour = brtTime.getHours();
+  return day >= 1 && day <= 5 && hour >= 9 && hour < 18;
+}
+
+// ---------------------------------------------------------------------------
 // Deduplication — prevents the same message being processed twice
 // (Evolution API can occasionally deliver duplicates)
 // ---------------------------------------------------------------------------
@@ -249,14 +262,24 @@ async function processWebhook(payload: WebhookPayload): Promise<void> {
   // Attendant request — notify owner and reply to client
   // -------------------------------------------------------------------------
   if (ATTENDANT_PATTERN.test(text)) {
+    // Always notify the owner regardless of business hours
     await sendMessage(
       OWNER_JID,
-      `*Bia:* Cliente solicitando atendimento humano.\n\nNome: ${pushName}\nhttps://wa.me/${from.replace("@s.whatsapp.net", "")}?text=Ol%C3%A1%2C+sou+o+Luciano+da+Bee+Assessorar!`
+      `*Bia:* Cliente solicitando atendimento humano.\n\nNome: ${pushName}\nhttps://wa.me/${from.replace("@s.whatsapp.net", "")}?text=Luciano%3A%0A%0AOl%C3%A1!+Sou+o+Luciano%2C+da+Bee+Assessorar.+%0AComo+posso+ajudar+voc%C3%AA+hoje%3F`
     );
-    await sendMessage(
-      from,
-      "Entendido! Vou chamar um atendente. Em breve alguém entrará em contato com você."
-    );
+
+    // Reply to client based on business hours
+    if (isWithinBusinessHours()) {
+      await sendMessage(
+        from,
+        "Entendido! Vou chamar um atendente. Em breve alguém entrará em contato com você."
+      );
+    } else {
+      await sendMessage(
+        from,
+        "Nosso horário de atendimento é de seg - sex das 09 - 18:00. Em breve um atendente entrará em contato com você!"
+      );
+    }
     return; // Do not call Claude for this message
   }
 
