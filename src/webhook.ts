@@ -277,7 +277,7 @@ async function processWebhook(payload: WebhookPayload): Promise<void> {
     } else {
       await sendMessage(
         from,
-        "Nosso horário de atendimento é de seg - sex das 09 - 18:00. Em breve um atendente entrará em contato com você!"
+        "Nosso horário de atendimento é de seg - sex das 09:00 - 18:00. Em breve um atendente entrará em contato com você!"
       );
     }
     return; // Do not call Claude for this message
